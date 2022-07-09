@@ -6,7 +6,7 @@ public class Triangle extends Figure {
 
     private final double[] edges;
 
-    public static Triangle getInstance(double... edges) {
+    public static Triangle createInstance(double... edges) {
         if (edges.length != 3)
             throw new IllegalArgumentException("Triangle can have only three edges");
         if (!isTriangle(edges))

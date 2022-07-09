@@ -4,7 +4,7 @@ public class Circle extends Figure{
 
     private final double radius;
 
-    public static Circle getInstance(double radius) {
+    public static Circle createInstance(double radius) {
         if (radius >= 0)
             return new Circle(radius);
         throw new IllegalArgumentException("Radius can not be less than 0");

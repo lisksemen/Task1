@@ -16,9 +16,9 @@ public class Main {
 
     private void run() {
         ArrayList<Figure> figures = new ArrayList<>();
-        figures.add(Triangle.getInstance(3,4,5));
-        figures.add(Circle.getInstance(3));
-        figures.add(Square.getInstance(2));
+        figures.add(Triangle.createInstance(3,4,5));
+        figures.add(Circle.createInstance(3));
+        figures.add(Square.createInstance(2));
 
         for (Figure figure : figures) {
             System.out.println(figure + ": square = " + figure.getSquare() + ", perimeter = " + figure.getPerimeter());

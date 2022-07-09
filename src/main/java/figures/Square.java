@@ -4,7 +4,7 @@ public class Square extends Figure {
 
     private final double a;
 
-    public static Square getInstance(double a) {
+    public static Square createInstance(double a) {
         if (a >= 0)
             return new Square(a);
         throw new IllegalArgumentException("Square side length can not be less than 0");
